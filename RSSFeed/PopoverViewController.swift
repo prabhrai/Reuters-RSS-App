@@ -24,30 +24,6 @@ class PopoverViewController: UIViewController {
     @IBOutlet weak var lblMessage: UILabel!
     
     
-    
-    @IBAction func showPublishDate(sender: AnyObject) {
-        let popoverViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "idPopoverViewController") as? PopoverViewController
-        
-        popoverViewController?.modalPresentationStyle = UIModalPresentationStyle.popover
-        
-      //  popoverViewController?.popoverPresentationController!.delegate = self  // commented out
-        
-        self.present(popoverViewController!, animated: true, completion: nil)
-        
-        
-        
-        //  popoverViewController?.popoverPresentationController?.barButtonItem = pubDateButtonItem // commented out
-
-        popoverViewController?.popoverPresentationController?.permittedArrowDirections = .any
-        popoverViewController?.preferredContentSize = CGSize(width : 200.0,height : 80.0)
-        
-        popoverViewController?.lblMessage.text = "Publish Date:\n\(showPublishDate)"
-        
-    }
-    
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.none
-    }
 
     /*
     // MARK: - Navigation

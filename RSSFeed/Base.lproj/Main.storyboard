@@ -138,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCd-c1-lAB">
-                                <rect key="frame" x="16" y="20" width="568" height="80"/>
+                                <rect key="frame" x="16" y="20" width="378" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="oZs-Be-rE8"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="urk-Zg-L0I"/>
@@ -152,7 +152,7 @@
                         <constraints>
                             <constraint firstItem="HCd-c1-lAB" firstAttribute="leading" secondItem="SQB-8m-rsk" secondAttribute="leading" constant="16" id="6Fe-gB-MeL"/>
                             <constraint firstItem="HCd-c1-lAB" firstAttribute="top" secondItem="SQB-8m-rsk" secondAttribute="top" constant="20" id="7fo-s1-srk"/>
-                            <constraint firstAttribute="trailing" secondItem="HCd-c1-lAB" secondAttribute="trailing" constant="-170" id="v2L-va-Atr"/>
+                            <constraint firstAttribute="trailing" secondItem="HCd-c1-lAB" secondAttribute="trailing" constant="20" id="v2L-va-Atr"/>
                         </constraints>
                     </view>
                     <connections>
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crW-VX-SSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="-296"/>
+            <point key="canvasLocation" x="492.75362318840581" y="-296.73913043478262"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="4dS-Ht-1Af">
