@@ -77,26 +77,31 @@ class TutorialViewController: UIViewController  , UIPopoverPresentationControlle
 
     @IBAction func showPublishDate(sender: AnyObject) {
         
-        var popoverViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "idPopoverViewController") as? PopoverViewController
+        let popoverViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "idPopoverViewController") as? PopoverViewController
         
         popoverViewController?.modalPresentationStyle = UIModalPresentationStyle.popover
         
         popoverViewController?.popoverPresentationController?.delegate = self
         
         self.present(popoverViewController!, animated: true, completion: nil)
+
         
         popoverViewController?.popoverPresentationController?.barButtonItem = pubDateButtonItem
         popoverViewController?.popoverPresentationController?.permittedArrowDirections = .any
-        popoverViewController?.preferredContentSize = CGSize(width: 200.0, height: 80.0)
-        popoverViewController?.lblMessage.text = "Publish Date:\n\(publishDate!)"
+        popoverViewController?.preferredContentSize = CGSize(width: 200.00, height: 80.0)
+
+        popoverViewController?.lblMessage.text = "Publish Date:\n\(publishDate!)        "
+
         
     }
     
-    
-    
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.none
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none
     }
+    
+//    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+//        return UIModalPresentationStyle.none
+//    }
     
     func handleFirstViewControllerDisplayModeChangeWithNotification(notification: NSNotification){
         let displayModeObject = notification.object as? NSNumber
