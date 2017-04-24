@@ -109,12 +109,12 @@ class XMLParser: NSObject, Foundation.XMLParserDelegate {
         }
     }
     
-     func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
         //print("at \(#file), line \(#line) : \(parseError.description)")
 
     }
     
-     func parser(_ parser: XMLParser, validationErrorOccurred validationError: Error) {
+    func parser(_ parser: XMLParser, validationErrorOccurred validationError: Error) {
         //print("at \(#file), line \(#line) : \(validationError.description)"
     }
     
