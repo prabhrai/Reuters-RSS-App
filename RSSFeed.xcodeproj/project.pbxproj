@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D00D5751E8A12AC004A2B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00D5741E8A12AC004A2B3E /* AppDelegate.swift */; };
-		4D00D57C1E8A12AC004A2B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D00D57B1E8A12AC004A2B3E /* Assets.xcassets */; };
 		4D00D57F1E8A12AC004A2B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D00D57D1E8A12AC004A2B3E /* LaunchScreen.storyboard */; };
 		4D00D58A1E8A12AC004A2B3E /* RSSFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00D5891E8A12AC004A2B3E /* RSSFeedTests.swift */; };
 		4D00D5951E8A12AC004A2B3E /* RSSFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00D5941E8A12AC004A2B3E /* RSSFeedUITests.swift */; };
@@ -18,6 +17,7 @@
 		4D00D5A91E8A140A004A2B3E /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00D5A81E8A140A004A2B3E /* XMLParser.swift */; };
 		4D40C2061E919F7400607207 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40C2051E919F7400607207 /* PopoverViewController.swift */; };
 		4D40C20B1E91D62000607207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D40C2091E91D62000607207 /* Main.storyboard */; };
+		4D665D0E1EAE62EC00B99F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D665D0D1EAE62EC00B99F41 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* Begin PBXFileReference section */
 		4D00D5711E8A12AC004A2B3E /* RSSFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D00D5741E8A12AC004A2B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D00D57B1E8A12AC004A2B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D00D57E1E8A12AC004A2B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D00D5801E8A12AC004A2B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D00D5851E8A12AC004A2B3E /* RSSFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +54,7 @@
 		4D00D5A81E8A140A004A2B3E /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		4D40C2051E919F7400607207 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		4D40C20A1E91D62000607207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D665D0D1EAE62EC00B99F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +105,9 @@
 		4D00D5731E8A12AC004A2B3E /* RSSFeed */ = {
 			isa = PBXGroup;
 			children = (
+				4D665D0D1EAE62EC00B99F41 /* Assets.xcassets */,
 				4D40C2091E91D62000607207 /* Main.storyboard */,
 				4D00D5741E8A12AC004A2B3E /* AppDelegate.swift */,
-				4D00D57B1E8A12AC004A2B3E /* Assets.xcassets */,
 				4D00D57D1E8A12AC004A2B3E /* LaunchScreen.storyboard */,
 				4D00D5801E8A12AC004A2B3E /* Info.plist */,
 				4D00D5A21E8A13AD004A2B3E /* TopicsTableViewController.swift */,
@@ -245,8 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D40C20B1E91D62000607207 /* Main.storyboard in Resources */,
+				4D665D0E1EAE62EC00B99F41 /* Assets.xcassets in Resources */,
 				4D00D57F1E8A12AC004A2B3E /* LaunchScreen.storyboard in Resources */,
-				4D00D57C1E8A12AC004A2B3E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ class TopicsTableViewController: UITableViewController,XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = NSURL(string: "http://feeds.feedburner.com/appcoda")
+        let url = NSURL(string: "http://feeds.reuters.com/reuters/technologyNews")
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url as URL! )
@@ -61,7 +61,7 @@ class TopicsTableViewController: UITableViewController,XMLParserDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dictionary = xmlParser.arrParsedData[indexPath.row] as Dictionary<String, String>
-        let tutorialLink = dictionary["link"]
+        let tutorialLink = dictionary["feedburner:origlink"]
         let publishDate = dictionary["pubDate"]
         let tutorialViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "idTutorialViewController") as! TutorialViewController
         tutorialViewController.tutorialURL = URL(string: tutorialLink!) as NSURL!

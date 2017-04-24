@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wt5-rF-TjC">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wt5-rF-TjC">
                                 <rect key="frame" x="20" y="684" width="374" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="OHa-lM-8i0"/>
@@ -41,6 +41,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-z1-ioo">
                                 <rect key="frame" x="20" y="20" width="374" height="664"/>
@@ -71,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="-429" y="-296"/>
         </scene>
-        <!--Appcoda Tutorials-->
+        <!--Reuters RSS Feed-->
         <scene sceneID="Gnb-I7-Ks3">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="Efv-x1-9H0" customClass="TopicsTableViewController" customModule="RSSFeed" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,9 +80,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" id="q9q-cZ-1Nl">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="idCell" textLabel="WRu-l3-hkk" rowHeight="80" style="IBUITableViewCellStyleDefault" id="kPP-Wr-yBi">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kPP-Wr-yBi" id="xmf-55-JQt">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
@@ -113,11 +118,11 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationItem key="navigationItem" title="Appcoda Tutorials" id="jja-68-uCm"/>
+                    <navigationItem key="navigationItem" title="Reuters RSS Feed" id="jja-68-uCm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxQ-PU-Feu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="-977"/>
+            <point key="canvasLocation" x="328" y="-977"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fdx-rc-6xb">
@@ -153,8 +158,8 @@
                                     <constraint firstAttribute="height" constant="80" id="oZs-Be-rE8"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="urk-Zg-L0I"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -172,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crW-VX-SSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492.75362318840581" y="-297.554347826087"/>
+            <point key="canvasLocation" x="328" y="-297"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="4dS-Ht-1Af">
@@ -188,4 +193,8 @@
             <point key="canvasLocation" x="-1341" y="-654"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Capture" width="979" height="119"/>
+    </resources>
+    <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

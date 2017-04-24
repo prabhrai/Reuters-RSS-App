@@ -73,13 +73,13 @@ class XMLParser: NSObject, Foundation.XMLParserDelegate {
         print("at \(#file), line \(#line) : current element is \(currentElement)")
     }
     
-     func parser(_ parser: XMLParser, foundCharacters string: String?) {
+      func parser(_ parser: XMLParser, foundCharacters string: String?) {
         // this first part is stupid--if you are == "Title" you are always != <anything else>
         // I think this fixes it
         
         if let extractedString = string {
             if (currentElement == "title" && extractedString != "Appcoda") ||
-                currentElement == "link" || currentElement == "pubDate" {
+                currentElement == "feedburner:origlink" || currentElement == "pubDate" {
                 foundCharacters += extractedString
             }
             if currentElement == "Title" {
@@ -94,7 +94,7 @@ class XMLParser: NSObject, Foundation.XMLParserDelegate {
         
         if !foundCharacters.isEmpty {
         
-            if elementName == "link" {
+            if elementName == "feedburner:origlink" {
                 // see the guide--\n\t\t are added by default
                 foundCharacters = (foundCharacters as NSString).substring(from: 3)
                 //                            println("at \(__FILE__), line \(__LINE__), foundChar is \"\(foundCharacters)\"")
@@ -109,12 +109,12 @@ class XMLParser: NSObject, Foundation.XMLParserDelegate {
         }
     }
     
-    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+    private func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
         //print("at \(#file), line \(#line) : \(parseError.description)")
 
     }
     
-    func parser(_ parser: XMLParser, validationErrorOccurred validationError: Error) {
+    private func parser(_ parser: XMLParser, validationErrorOccurred validationError: Error) {
         //print("at \(#file), line \(#line) : \(validationError.description)"
     }
     
